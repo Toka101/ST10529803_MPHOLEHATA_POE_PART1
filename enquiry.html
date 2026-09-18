@@ -1,84 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enquire About Nova Android Products</title>
-  <meta name="description" content="Request a Nova Android product quote or learn more about which device suits your needs best.">
-</head>
-<body>
-  <header>
-    <h1>Nova Android</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="enquiry.html">Enquiry</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquire About Nova Android Products</title>
+    <meta
+      name="description"
+      content="Request a Nova Android product quote or learn more about which device suits your needs best."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html" aria-label="Nova Android home">
+          <span class="brand-mark">N</span>
+          <span>Nova Android</span>
+        </a>
 
-  <main>
-    <section>
-      <h2>Make an enquiry</h2>
-      <p>Whether you are looking for a personal device, a bulk purchase, or a business solution, our team can recommend the best option for your needs.</p>
-    </section>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <section>
-      <h3>Request a quote</h3>
-      <form action="#" method="post">
-        <p>
-          <label for="fullName">Full name:</label><br>
-          <input type="text" id="fullName" name="fullName">
-        </p>
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>Make an enquiry</h1>
+        </div>
+      </section>
 
-        <p>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email">
-        </p>
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-panel">
+              <h2>Request a quote</h2>
+              <p>
+                Whether you are looking for a personal device, a bulk purchase, or a
+                business solution, our team can recommend the best option for your needs.
+              </p>
 
-        <p>
-          <label for="phone">Phone:</label><br>
-          <input type="tel" id="phone" name="phone">
-        </p>
+              <ul class="contact-list">
+                <li>
+                  <strong>Fast response:</strong>
+                  Our sales team usually replies within one business day.
+                </li>
+                <li>
+                  <strong>Flexible guidance:</strong>
+                  We can suggest the right range based on budget and usage.
+                </li>
+                <li>
+                  <strong>Business-ready:</strong>
+                  Bulk pricing and custom recommendations are available for teams.
+                </li>
+              </ul>
+            </div>
 
-        <p>
-          <label for="product">Product interest:</label><br>
-          <select id="product" name="product">
-            <option value="">Select a device range</option>
-            <option>Nova Lite</option>
-            <option>Nova X</option>
-            <option>Nova Pro</option>
-            <option>Not sure yet</option>
-          </select>
-        </p>
+            <div class="form-panel">
+              <h2>Tell us what you need</h2>
+              <form action="#" method="post">
+                <label>
+                  Full name
+                  <input type="text" id="fullName" name="fullName" />
+                </label>
 
-        <p>
-          <label for="budget">Budget range:</label><br>
-          <select id="budget" name="budget">
-            <option value="">Select your budget</option>
-            <option>Under R2,500</option>
-            <option>R2,500 - R4,999</option>
-            <option>R5,000 - R7,999</option>
-            <option>R8,000 and above</option>
-          </select>
-        </p>
+                <div class="field-row">
+                  <label>
+                    Email
+                    <input type="email" id="email" name="email" />
+                  </label>
 
-        <p>
-          <label for="details">Enquiry details:</label><br>
-          <textarea id="details" name="details" rows="6"></textarea>
-        </p>
+                  <label>
+                    Phone
+                    <input type="tel" id="phone" name="phone" />
+                  </label>
+                </div>
 
-        <p><button type="submit">Submit enquiry</button></p>
-      </form>
-    </section>
-  </main>
+                <div class="field-row">
+                  <label>
+                    Product interest
+                    <select id="product" name="product">
+                      <option value="">Select a device range</option>
+                      <option>Nova Lite</option>
+                      <option>Nova X</option>
+                      <option>Nova Pro</option>
+                      <option>Not sure yet</option>
+                    </select>
+                  </label>
 
-  <footer>
-    <p>© 2026 Nova Android. All rights reserved.</p>
-    <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="products.html">Products</a> | <a href="contact.html">Contact</a></p>
-  </footer>
-</body>
+                  <label>
+                    Budget range
+                    <select id="budget" name="budget">
+                      <option value="">Select your budget</option>
+                      <option>Under R2,500</option>
+                      <option>R2,500 - R4,999</option>
+                      <option>R5,000 - R7,999</option>
+                      <option>R8,000 and above</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label>
+                  Enquiry details
+                  <textarea id="details" name="details" rows="6"></textarea>
+                </label>
+
+                <button type="submit">Submit enquiry</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Nova Android. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

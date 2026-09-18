@@ -1,87 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Nova Android | Customer Support and Sales</title>
-  <meta name="description" content="Contact Nova Android for product questions, support, sales enquiries, and partnership opportunities in South Africa.">
-</head>
-<body>
-  <header>
-    <h1>Nova Android</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="enquiry.html">Enquiry</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Nova Android | Customer Support and Sales</title>
+    <meta
+      name="description"
+      content="Contact Nova Android for product questions, support, sales enquiries, and partnership opportunities in South Africa."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html" aria-label="Nova Android home">
+          <span class="brand-mark">N</span>
+          <span>Nova Android</span>
+        </a>
 
-  <main>
-    <section>
-      <h2>Contact us</h2>
-      <p>We would love to hear from you. Reach out for sales, technical support, or general inquiries.</p>
-    </section>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <section>
-      <h3>Get in touch</h3>
-      <ul>
-        <li><strong>Head office:</strong> 124 Innovation Avenue, Johannesburg, Gauteng, South Africa</li>
-        <li><strong>Email:</strong> support@novaandroid.co.za</li>
-        <li><strong>Phone:</strong> +27 (0)11 234 5678</li>
-        <li><strong>Business hours:</strong> Monday to Friday, 08:00 - 17:00</li>
-      </ul>
-    </section>
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>Contact us</h1>
+        </div>
+      </section>
 
-    <section>
-      <h3>Send a message</h3>
-      <form action="#" method="post">
-        <p>
-          <label for="firstName">First name:</label><br>
-          <input type="text" id="firstName" name="firstName">
-        </p>
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-panel">
+              <h2>Get in touch</h2>
+              <p>We would love to hear from you. Reach out for sales, technical support, or general inquiries.</p>
 
-        <p>
-          <label for="lastName">Last name:</label><br>
-          <input type="text" id="lastName" name="lastName">
-        </p>
+              <ul class="contact-list">
+                <li>
+                  <strong>Head office:</strong>
+                  124 Innovation Avenue, Johannesburg, Gauteng, South Africa
+                </li>
+                <li>
+                  <strong>Email:</strong>
+                  support@novaandroid.co.za
+                </li>
+                <li>
+                  <strong>Phone:</strong>
+                  +27 (0)11 234 5678
+                </li>
+                <li>
+                  <strong>Business hours:</strong>
+                  Monday to Friday, 08:00 - 17:00
+                </li>
+              </ul>
 
-        <p>
-          <label for="email">Email address:</label><br>
-          <input type="email" id="email" name="email">
-        </p>
+              <div class="map-box">
+                <iframe
+                  src="https://www.google.com/maps?q=Johannesburg%20Gauteng%20South%20Africa&output=embed"
+                  title="Map showing Johannesburg, South Africa"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
 
-        <p>
-          <label for="phone">Phone number:</label><br>
-          <input type="tel" id="phone" name="phone">
-        </p>
+            <div class="form-panel">
+              <h2>Send a message</h2>
+              <form action="#" method="post">
+                <div class="field-row">
+                  <label>
+                    First name
+                    <input type="text" id="firstName" name="firstName" />
+                  </label>
 
-        <p>
-          <label for="subject">Subject:</label><br>
-          <input type="text" id="subject" name="subject">
-        </p>
+                  <label>
+                    Last name
+                    <input type="text" id="lastName" name="lastName" />
+                  </label>
+                </div>
 
-        <p>
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="6"></textarea>
-        </p>
+                <label>
+                  Email address
+                  <input type="email" id="email" name="email" />
+                </label>
 
-        <p><button type="submit">Send enquiry</button></p>
-      </form>
-    </section>
+                <label>
+                  Phone number
+                  <input type="tel" id="phone" name="phone" />
+                </label>
 
-    <section>
-      <h3>Our location</h3>
-      <p><a href="https://maps.google.com/?q=Johannesburg+Gauteng+South+Africa" target="_blank" rel="noopener noreferrer">View on Google Maps</a></p>
-    </section>
-  </main>
+                <label>
+                  Subject
+                  <input type="text" id="subject" name="subject" />
+                </label>
 
-  <footer>
-    <p>© 2026 Nova Android. All rights reserved.</p>
-    <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="products.html">Products</a> | <a href="enquiry.html">Enquiry</a></p>
-  </footer>
-</body>
+                <label>
+                  Message
+                  <textarea id="message" name="message" rows="6"></textarea>
+                </label>
+
+                <button type="submit">Send enquiry</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Nova Android. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
