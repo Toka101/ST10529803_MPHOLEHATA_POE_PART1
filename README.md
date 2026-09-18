@@ -370,7 +370,7 @@ The existing Nova website provides a foundation for establishing the Nova Androi
 
   
 
-•	User Profile — Personal profile, account information, preferences, settings, and account management. 
+•	User Profile — Personal profile, account information, preferences, settings, and account management.
 
   
 
