@@ -65,21 +65,24 @@
 
             <div class="form-panel">
               <h2>Tell us what you need</h2>
-              <form action="#" method="post">
+              <form id="enquiry-form" action="#" method="post" novalidate>
                 <label>
                   Full name
                   <input type="text" id="fullName" name="fullName" />
+                  <span class="error-message" id="fullName-error" aria-live="polite"></span>
                 </label>
 
                 <div class="field-row">
                   <label>
                     Email
                     <input type="email" id="email" name="email" />
+                    <span class="error-message" id="email-error" aria-live="polite"></span>
                   </label>
 
                   <label>
                     Phone
                     <input type="tel" id="phone" name="phone" />
+                    <span class="error-message" id="phone-error" aria-live="polite"></span>
                   </label>
                 </div>
 
@@ -93,6 +96,7 @@
                       <option>Nova Pro</option>
                       <option>Not sure yet</option>
                     </select>
+                    <span class="error-message" id="product-error" aria-live="polite"></span>
                   </label>
 
                   <label>
@@ -104,6 +108,7 @@
                       <option>R5,000 - R7,999</option>
                       <option>R8,000 and above</option>
                     </select>
+                    <span class="error-message" id="budget-error" aria-live="polite"></span>
                   </label>
                 </div>
 
@@ -112,6 +117,7 @@
                   <textarea id="details" name="details" rows="6"></textarea>
                 </label>
 
+                <p id="form-status" aria-live="polite"></p>
                 <button type="submit">Submit enquiry</button>
               </form>
             </div>
@@ -128,8 +134,10 @@
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
         </ul>
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
